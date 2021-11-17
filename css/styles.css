@@ -1,0 +1,60 @@
+body {
+  background-color: #999999;
+}
+
+header {
+  background-color: #999999;
+  text-align: center;
+}
+
+nav {
+  background-color: #333333;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  border-right: 1px solid #ffffff;
+  padding: 2px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding-right: 4px;
+  margin-right: 4px;
+}
+
+nav ul li a:hover {
+  color: red;
+  padding: 5px;
+  background-color: white;
+}
+
+nav ul li a:active {
+  color: black;
+  padding: 5px;
+  background-color: white;
+}
+
+nav ul li a:visited {
+  color: yellow;
+  padding: 5px;
+  background-color: black;
+}
+
+.center {
+  text-align: center;
+}
+
+section {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}

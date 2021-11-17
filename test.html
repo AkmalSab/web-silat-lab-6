@@ -1,0 +1,83 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header>
+      <a href="http://silatcekak.org.my">
+        <img src="image/banner.png" style="height: auto;" id="imgHeader"/>
+      </a>
+    </header>
+
+    <div class="flex-container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="introduction.html">INTRODUCTION</a>
+                </li>
+                <li>
+                    <a href="mission.html">MISSION&VISSION</a>
+                </li>
+                <li>
+                    <a href="guestbook.html">GUESTBOOK</a>
+                </li>
+                <li>
+                    <a href="flex.html">FLEX</a>
+                </li>
+                <li>
+                    <a href="test.html">MEDIA</a>
+                </li>
+                <li>
+                    <a href="lab6.html">CAL DISTANCE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div id="wrapper">
+                <h3>MEDIA</h3> <br>
+        
+                <h2>Video</h2>
+                <video width="320" height="200" controls>
+                    <source src="video/linkin-park.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <h2>Audio</h2>
+                <audio controls>
+                    <source src="audio/song.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+        
+                <h2>Embed</h2>
+                <embed type="video/webm" src="video/linkin-park.mp4" width="400" height="300">
+        
+                <h2>Iframe</h2>
+                <iframe src="https://yt5s.com/en12" title="iframe" width="50%" height="50%"></iframe>
+
+                <h2>Canvas</h2>
+                <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+            </div>
+        </section>
+    </div>
+  
+    <footer>
+        <b>Copyright &copy; B031920030@student.utem.edu.my</b>
+    </footer>
+</body>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(10, 10, 80, 100);
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+
+        table.noBorder, tr.noBorder, td.noBorder {
+            border:0px;
+        }
+    </style>
+<head>
+    <title>Guestbook</title>
+</head>
+<body id="bodyPage" bgcolor="#FA8072">
+    <header>
+        <a href="http://silatcekak.org.my">
+            <img src="image/banner.png" style="height: auto;" id="imgHeader"/>
+        </a>
+    </header>
+
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="introduction.html">INTRODUCTION</a>
+                </li>
+                <li>
+                    <a href="mission.html">MISSION&VISSION</a>
+                </li>
+                <li>
+                    <a href="guestbook.html">GUESTBOOK</a>
+                </li>
+                <li>
+                    <a href="flex.html">FLEX</a>
+                </li>
+                <li>
+                    <a href="test.html">MEDIA</a>
+                </li>
+                <li>
+                    <a href="lab6.html">CAL DISTANCE</a>
+                </li>
+            </ul>
+        </nav>
+
+    <section>
+        <h1>GUESTBOOK PAGE</h1>        
+        
+        <table style="width: 50%; margin-left: auto; margin-right: auto;">
+            <tr>
+                <td colspan="2">
+                    <select id="colorSelection">
+                        <option value="#FA8072">Default</option>
+                        <option value="#ffffff">White</option>
+                        <option value="#ff0000">Red</option>
+                        <option value="#0000ff">Blue</option>
+                        <option value="#00ff00">Lime</option>
+                        <option value="#ffff00">Yellow</option>
+                    </select>
+                    <select id="pageSelection">
+                        <option selected>Choose one</option>
+                        <option value="index.html">UTAMA</option>
+                        <option value="introduction.html">SEJARAH</option>
+                        <option value="mission.html">MISI & VISI</option>
+                        <option value="guestbook.html">BUKU TAMU</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    First Name:
+                </td>
+                <td>
+                    <input id="firstName" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    <input id="lastName" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <textarea id="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="female">
+                    <label for="html">female</label>
+
+                    <input type="radio" name="gender" value="male">
+                    <label for="html">male</label>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input id="email" type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Comment:
+                </td>
+                <td>
+                    <textarea id="comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Favourite Site:
+                </td>
+                <td>
+                    <input type="checkbox" id="favourite1" name="favourite" value="https://www.utem.edu.my">
+                    <label for="favourite1"> UTeM Page</label><br>
+                    <input type="checkbox" id="favourite2" name="favourite" value="https://www.facebook.com.my">
+                    <label for="favourite2"> Facebook Page</label><br>
+                    <input type="checkbox" id="favourite3" name="favourite" value="https://www.google.com.my">
+                    <label for="favourite3"> Google Page</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <button id="process">PROCESS</button>
+                        <button>CLEAR</button>
+                    </center>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>  
+        
+        <table class="noBorder" style="width: 50%; margin-left: auto; margin-right: auto;">
+            <tr class="noBorder">
+                <td class="noBorder">
+                    <p id="date">Date: </p>
+                    <p id="first_name">First Name: </p>
+                    <p id="last_name">Last Name: </p>
+                    <p id="address_result">Address: </p>
+                    <p id="gender_result">Gender: </p>
+                    <p id="email_result">Email: </p>
+                    <p id="comment_result">Comment: </p>
+                    <p id="favourite_result">Favourite Site: </p>
+                </td>                
+            </tr>
+        </table>
+    </section>
+        
+    
+    <hr>
+    <footer>
+        <h4>Copyright &#169; B031920030@student.utem.edu.my</h4>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

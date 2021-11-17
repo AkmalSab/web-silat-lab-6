@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+
+        table.noBorder, tr.noBorder, td.noBorder {
+            border:0px;
+        }
+    </style>
+<head>
+    <title>Guestbook</title>
+</head>
+<body id="bodyPage">
+    <header>
+      <a href="http://silatcekak.org.my">
+        <img src="image/banner.png" style="height: auto;" id="imgHeader"/>
+      </a>
+    </header>
+
+    <div class="flex-container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="intro.html">INTRODUCTION</a>
+                </li>
+                <li>
+                    <a href="mission.html">MISSION&VISSION</a>
+                </li>
+                <li>
+                    <a href="guestbook.html">GUESTBOOK</a>
+                </li>
+                <li>
+                    <a href="flex.html">FLEX</a>
+                </li>
+                <li>
+                    <a href="test.html">MEDIA</a>
+                </li>
+                <li>
+                    <a href="lab6.html">CAL DISTANCE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div id="main">
+                <h3>CALCULATE DISTANCE & ALL</h3>
+        
+                <form method="POST" id="formDistance">
+                    <table border="1">
+                        <tr>
+                            <td colspan="2">
+                                <select id="colorSelection">
+                                <option value="#FA8072">Default</option>
+                                <option value="#ffffff">White</option>
+                                <option value="#ff0000">Red</option>
+                                <option value="#0000ff">Blue</option>
+                                <option value="#00ff00">Lime</option>
+                                <option value="#ffff00">Yellow</option>
+                                </select>
+                        </tr>
+                        <tr>
+                            <th>X1 VALUE:</th>
+                            <td><input type="text" id="x1val"/></td>
+                        </tr>
+                        <tr>
+                            <th>Y1 VALUE:</th>
+                            <td><input type="text" id="y1val"/></td>
+                        </tr>
+                        <tr>
+                            <th>X2 VALUE:</th>
+                            <td><input type="text" id="x2val"/></td>
+                        </tr>
+                        <tr>
+                            <th>Y2 VALUE:</th>
+                            <td><input type="text" id="y2val"/></td>
+                        </tr>
+                        <tr>
+                            <th>MY IDOL:</th>
+                            <td>
+                                <input type="checkbox" id="taylor" value="Taylor Hicks"/>
+                                <label for="taylor">Taylor Hicks</label>
+                                <input type="checkbox" id="mcphee" value="Katharine McPhee"/>
+                                <label for="mcphee">Katharine McPhee</label>
+                                <input type="checkbox" id="chris" value="Chris Daughtry"/>
+                                <label for="chris">Chris Daughtry</label>
+                                <input type="checkbox" id="elliot" value="Elliot Yamin"/>
+                                <label for="elliot">Elliot Yamin</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit" id="calDistanceBtn">CALCULATE DISTANCE</button>
+                                <button type="button" id="resetButton">CLEAR</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div id="displayOutput">
+        
+                </div>
+            </div>
+        </section>
+    </div>
+  
+    <footer style="text-align: center">
+        <b>Copyright &copy; B031920032@student.utem.edu.my</b>
+    </footer>
+
+    <script src="js/script2.js" type="text/javascript"></script>
+</body>
+</html>
